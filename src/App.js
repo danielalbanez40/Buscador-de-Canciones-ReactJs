@@ -1,11 +1,13 @@
 import React from 'react';
-import './App.css';
 import SongSearch from './components/SongSearch';
+import './App.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
     <div>
-     <SongSearch/>
+      <SongSearch />
+      
     </div>
   );
 }
