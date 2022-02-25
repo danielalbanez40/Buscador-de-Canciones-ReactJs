@@ -6,8 +6,6 @@ Apis que utilicé:
 
 👉🏻 [The AudioDB](https://www.theaudiodb.com/api_guide.php) para extraer la información de la banda
 
-#### &
-
 👉🏻 [Lyrics ovh](https://lyricsovh.docs.apiary.io/#reference/0/lyrics-of-a-song/search) para obtener la 
 letra de las canciones
 
