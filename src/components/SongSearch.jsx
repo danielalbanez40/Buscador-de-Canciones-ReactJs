@@ -44,7 +44,7 @@ const SongSearch = () => {
 
   return (
     <div>
-      <h2>Buscador de canciones</h2>
+      <h2>🎶 Buscador de canciones 🎧</h2>
       <hr />
 
       <SongForm handleSearch={handleSearch} />
