@@ -93,7 +93,57 @@ input[type="submit"]:hover {
               color 500ms ease-in-out;
 }
 
+.detail-container {
+  width: 70%;
+}
+
+.detail-container-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h3,
+blockquote {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(224, 84, 19);
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  transition: color .3s ease-in-out;
+}
+
+@media screen and (min-width: 800px) {
+  .grid-1-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 2rem;
+   
+  }
+}
+
 /* Estilos del Loader */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .lds-ring {
   display: inline-block;
@@ -108,10 +158,10 @@ input[type="submit"]:hover {
   width: 64px;
   height: 64px;
   margin: 8px;
-  border: 8px solid #000;
+  border: 8px solid #dedede;
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #000 transparent transparent transparent;
+  border-color: #dedede transparent transparent transparent;
 }
 .lds-ring div:nth-child(1) {
   animation-delay: -0.45s;

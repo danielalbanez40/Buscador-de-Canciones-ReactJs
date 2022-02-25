@@ -18,7 +18,7 @@ const SongForm = ({ handleSearch }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!form.artist || !form.song) {
+    if (!form.artist || !form.song) {//compruebo si envío el formulario con uno o los dos datos vacíos
       alert("Debes completar todos los campos para enviar el formulario");
       return;
     }

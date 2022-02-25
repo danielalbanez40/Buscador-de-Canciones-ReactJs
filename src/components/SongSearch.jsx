@@ -10,20 +10,17 @@ const SongSearch = () => {
   const [bio, setBio] = useState(null);
   const [loading, setLoading] = useState(false);
 
-
   //Llamado y consumo de apis
   useEffect(() => {
     if (search === null) return;
 
     const fetchData = async () => {
-      
-      const {song, artist} = search;
-      
+      const { song, artist } = search;
 
       let artistUrl = `https://theaudiodb.com/api/v1/json/2/search.php?s=${artist}`;
       let songUrl = `https://api.lyrics.ovh/v1/${artist}/${song}`;
 
-      console.log(artistUrl,songUrl)
+      console.log(artistUrl, songUrl);
 
       setLoading(true);
 
@@ -31,14 +28,13 @@ const SongSearch = () => {
         helpHttp().get(artistUrl),
         helpHttp().get(songUrl),
       ]);
-      console.log(artistRes,songRes)
+      console.log(artistRes, songRes);
       setLoading(false);
       setBio(artistRes);
       setLyric(songRes);
     };
 
     fetchData();
-
   }, [search]);
 
   const handleSearch = (data) => {
@@ -50,10 +46,14 @@ const SongSearch = () => {
     <div>
       <h2>Buscador de canciones</h2>
       <hr />
+
       <SongForm handleSearch={handleSearch} />
       <hr />
-      <SongDetails search={search} lyric={lyric} bio={bio} />
-      {loading && <Loader />}
+      <div className="loader">{loading && <Loader />}</div>
+
+      {search && !loading && (
+        <SongDetails search={search} lyric={lyric} bio={bio} />
+      )}
     </div>
   );
 };
