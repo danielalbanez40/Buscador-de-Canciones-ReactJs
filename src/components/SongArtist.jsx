@@ -40,7 +40,7 @@ const SongArtist = ({ artist }) => {
 
       <p>
         Para más información{" "}
-        <a href={`https://${artist.strWebsite}`} target="_blank" rel="norreferer">
+        <a href={`https://${artist.strWebsite}`} target="_blank" rel="noreferrer">
           Visita nuestro sitio web oficial
         </a>
       </p>
