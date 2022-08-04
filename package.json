@@ -1,6 +1,6 @@
 {
   "name": "buscador-canciones-reactjs",
-  "homepage": "https://danielalbanez40.github.io/Buscador-de-Canciones-ReactJs",
+  "homepage": "buscador-canciones-reactjs",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
